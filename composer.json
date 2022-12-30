@@ -1,0 +1,16 @@
+{
+    "name": "jl-twc/jl-laravel-extras",
+    "description": "An extension on Laravel framework's default capabilities, introducing custom commands and components.",
+    "autoload": {
+        "psr-4": {
+            "JlTwc\\JlLaravelExtras\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "jl-twc",
+            "email": "jeremylangevindev@gmail.com"
+        }
+    ],
+    "require": {}
+}

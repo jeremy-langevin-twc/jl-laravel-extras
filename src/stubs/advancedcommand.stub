@@ -1,0 +1,74 @@
+<?php
+
+namespace App\Console\Commands;
+
+use Illuminate\Console\Command;
+use Illuminate\Support\Carbon;
+use DB;
+
+class {{ command_name }} extends Command
+{
+    /**
+     * The name and signature of the console command.
+     *
+     * @var string
+     */
+    protected $signature = '{{ command }}';
+
+    /**
+     * The console command description.
+     *
+     * @var string
+     */
+    protected $description = 'Command description';
+
+    /**
+     * Create a new command instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        parent::__construct();
+    }
+
+    /**
+     * Define the main query (if applicable) that is used.
+     * This is a helpful wait to get an initial count when using a progress bar.
+     *
+     */ 
+    protected function baseQuery()
+    {
+
+    }
+
+    /**
+     * Execute the console command.
+     *
+     * @return int
+     */
+    public function handle()
+    {
+        $start = microtime(true);
+        $count = $this->baseQuery()->count();
+        $chunksize = 1000;
+
+        // $this->info(" {count} .");
+        $bar = $this->output->createProgressBar($count);
+
+        // DB::beginTransaction();
+
+        $this->baseQuery()
+            ->chunk($chunkSize, function() use ($bar) {
+                foreach() {
+
+                    $bar->advance();
+                }
+            });
+
+        $time = microtime(true) - $start;
+        $this->info("Processing took: $time");
+
+        // DB::rollback();
+    }
+}
