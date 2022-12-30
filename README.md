@@ -4,10 +4,10 @@ This lightweight package is designed to add support for various (non-default) La
 
 ### [Installation](#Installation)
 ### Available Options:
-- #### [Enum](#enum)
-- #### [Repository](#repository)
-- #### [Service](#service)
-- #### [Advanced Command](#advanced-command)
+- [Enum](#enum)
+- [Repository](#repository)
+- [Service](#service)
+- [Advanced Command](#advanced-command)
 
 
 
@@ -58,7 +58,7 @@ use App\Enum\Criticality;
 $asset->criticality = Criticality::LOW;
 ```
 
-Enums can be used in request validation, conditional statements, model values and more. To methods available with the Enum class, take a look inside the base Enum.php file of this package.
+Enums can be used in request validation, conditional statements, setting model values and more. To explore the methods available with the Enum class, take a look inside the base Enum.php file of this package.
 
 ---
 ## Repository
