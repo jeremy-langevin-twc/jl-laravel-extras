@@ -1,5 +1,5 @@
 # Laravel Extras
-
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/jeremy-langevin-twc/jl-laravel-extras)  
 This lightweight package is designed to add support for various (non-default) Laravel conventions.
 
 ### [Installation](#installation)
