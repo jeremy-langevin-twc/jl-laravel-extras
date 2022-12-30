@@ -12,5 +12,12 @@
             "email": "jeremylangevindev@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JlTwc\\JlLaravelExtras\\Providers\\JlTwcProvider"
+            ]
+        }
+    }
 }
