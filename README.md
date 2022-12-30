@@ -3,6 +3,7 @@
 This lightweight package is designed to add support for various (non-default) Laravel conventions.
 
 ### [Installation](#installation)
+
 ### Available Options:
 - [Enum](#enum)
 - [Repository](#repository)
