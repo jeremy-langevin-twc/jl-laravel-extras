@@ -24,7 +24,7 @@ class MakeAdvancedCommand extends GeneratorCommand
     
     public function getStub()
     {
-        return base_path('stubs/advancedcommand.stub');
+        return __DIR__.'/../../stubs/advancedcommand.stub';
     }
 
     protected function getDefaultNamespace($rootNamespace)

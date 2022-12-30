@@ -24,7 +24,7 @@ class MakeServiceCommand extends GeneratorCommand
 
     public function getStub()
     {
-        return base_path('stubs/service.stub');
+        return __DIR__.'/../../stubs/service.stub';
     }
 
     public function getDefaultNamespace($rootNamespace)

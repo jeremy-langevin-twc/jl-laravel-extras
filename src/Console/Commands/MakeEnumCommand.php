@@ -24,7 +24,7 @@ class MakeEnumCommand extends GeneratorCommand
 
     public function getStub()
     {
-        return base_path('stubs/enum.stub');
+        return __DIR__.'/../../stubs/enum.stub';
     }
 
     public function getDefaultNamespace($rootNamespace)
