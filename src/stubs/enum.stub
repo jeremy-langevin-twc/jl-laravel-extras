@@ -2,6 +2,8 @@
 
 namespace App\Enum;
 
+use JlTwc\JlLaravelExtras\Enum;
+
 class {{ enum_name }} extends Enum
 {
    
