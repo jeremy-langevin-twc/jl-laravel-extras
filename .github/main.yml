@@ -1,0 +1,15 @@
+name: TestCreateRelease
+
+on:
+  push:
+    tags:
+      - v**
+
+jobs:
+  create-release-version:
+    runs-on: ubuntu-latest
+    permissions: 
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ncipollo/release-action@v1
